@@ -16,6 +16,7 @@ vue 기반의 mdi 구성
 
 ## Layout 요소
 1) Header
+- Logo, 편의 기능, 설정, 로그아웃 등 필요한 요소 고려
 2) Sidebar
 - 왼쪽/오른쪽 이동이 유연하게 설정가능하도록 변경
 3) Content
