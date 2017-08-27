@@ -21,7 +21,39 @@ vue 기반의 mdi 구성
 - 왼쪽/오른쪽 이동이 유연하게 설정가능하도록 변경
 3) Content
 - 내용부는 최대한 유연하게 작성
-- vue-layout에서 고민 
+- vue-layout에서 고민
 4) Footer
 - Footer는 Option으로 고려
 - 최대한 많은 공간을 확보해야하는 업무에서는 불필요할 수 있음
+
+
+# vue-mdi
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
