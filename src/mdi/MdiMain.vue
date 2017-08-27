@@ -1,11 +1,28 @@
-<template xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<template>
   <div>
-    <header>header</header>
-    <nav>navigator</nav>
-    <aside>side bar</aside>
-    <section>section1</section>
-    <section>section2</section>
-    <footer>footer</footer>
+    <!-- Page Layout here -->
+    <div class="row">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" v-bind:class="logoDirection" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" v-bind:class="ulDirection" class="hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <aside class="col s12 m4 l3 teal lighten-2">
+        asdasd
+        <button @click="clickHandler">button</button>
+      </aside>
+
+      <section class="col s12 m8 l9">
+
+      </section>
+
+    </div>
   </div>
 </template>
 
@@ -14,14 +31,25 @@
     name: 'MdiMain',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        direction: 'right'
+      }
+    },
+    computed: {
+      ulDirection: function () {
+        return (this.direction === 'right') ? 'left' : 'right'
+      },
+      logoDirection: function () {
+        return (this.direction !== 'right') ? 'left' : 'right'
+      }
+    },
+    methods: {
+      clickHandler: function () {
+        this.direction = (this.direction === 'right') ? 'left' : 'right'
       }
     }
   }
 </script>
 
 <style scoped>
-  div {
-    color:red;
-  }
+
 </style>
